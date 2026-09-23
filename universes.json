@@ -1,0 +1,2584 @@
+{
+  "universes": {
+    "demon_slayer": {
+      "id": "demon_slayer",
+      "name": "Demon Slayer",
+      "version": 1,
+
+      "faction_spin": {
+        "type": "weighted_random",
+        "options": [
+          {
+            "id": "slayer",
+            "name": "Demon Slayer",
+            "weight": 50
+          },
+          {
+            "id": "demon",
+            "name": "Demon",
+            "weight": 50
+          }
+        ]
+      },
+
+      "slayer_sequence": [
+        "rank",
+        "weapon",
+        "breathing_style",
+        "ultimate"
+      ],
+
+      "demon_sequence": [
+        "rank",
+        "weapon",
+        "blood_demon_art",
+        "regeneration"
+      ],
+
+      "slayer": {
+        "ranks": [
+          {
+            "id": "mizunoto",
+            "name": "Mizunoto",
+            "tier": 1,
+            "weight": 30,
+            "stats": {
+              "base_power": 100,
+              "strength": 20,
+              "speed": 20,
+              "defense": 20,
+              "stamina": 25,
+              "weapon_control": 15,
+              "breathing_control": 10,
+              "ultimate_control": 5
+            }
+          },
+          {
+            "id": "mizunoe",
+            "name": "Mizunoe",
+            "tier": 2,
+            "weight": 25,
+            "stats": {
+              "base_power": 115,
+              "strength": 23,
+              "speed": 23,
+              "defense": 23,
+              "stamina": 28,
+              "weapon_control": 18,
+              "breathing_control": 13,
+              "ultimate_control": 7
+            }
+          },
+          {
+            "id": "kanoto",
+            "name": "Kanoto",
+            "tier": 3,
+            "weight": 20,
+            "stats": {
+              "base_power": 130,
+              "strength": 26,
+              "speed": 26,
+              "defense": 26,
+              "stamina": 31,
+              "weapon_control": 21,
+              "breathing_control": 16,
+              "ultimate_control": 9
+            }
+          },
+          {
+            "id": "kanoe",
+            "name": "Kanoe",
+            "tier": 4,
+            "weight": 18,
+            "stats": {
+              "base_power": 145,
+              "strength": 29,
+              "speed": 29,
+              "defense": 29,
+              "stamina": 34,
+              "weapon_control": 24,
+              "breathing_control": 19,
+              "ultimate_control": 11
+            }
+          },
+          {
+            "id": "tsuchinoto",
+            "name": "Tsuchinoto",
+            "tier": 5,
+            "weight": 15,
+            "stats": {
+              "base_power": 160,
+              "strength": 32,
+              "speed": 32,
+              "defense": 32,
+              "stamina": 37,
+              "weapon_control": 27,
+              "breathing_control": 22,
+              "ultimate_control": 13
+            }
+          },
+          {
+            "id": "tsuchinoe",
+            "name": "Tsuchinoe",
+            "tier": 6,
+            "weight": 13,
+            "stats": {
+              "base_power": 175,
+              "strength": 35,
+              "speed": 35,
+              "defense": 35,
+              "stamina": 40,
+              "weapon_control": 30,
+              "breathing_control": 25,
+              "ultimate_control": 15
+            }
+          },
+          {
+            "id": "hinoto",
+            "name": "Hinoto",
+            "tier": 7,
+            "weight": 10,
+            "stats": {
+              "base_power": 190,
+              "strength": 38,
+              "speed": 38,
+              "defense": 38,
+              "stamina": 43,
+              "weapon_control": 33,
+              "breathing_control": 28,
+              "ultimate_control": 17
+            }
+          },
+          {
+            "id": "hinoe",
+            "name": "Hinoe",
+            "tier": 8,
+            "weight": 8,
+            "stats": {
+              "base_power": 205,
+              "strength": 41,
+              "speed": 41,
+              "defense": 41,
+              "stamina": 46,
+              "weapon_control": 36,
+              "breathing_control": 31,
+              "ultimate_control": 19
+            }
+          },
+          {
+            "id": "kinoto",
+            "name": "Kinoto",
+            "tier": 9,
+            "weight": 6,
+            "stats": {
+              "base_power": 220,
+              "strength": 44,
+              "speed": 44,
+              "defense": 44,
+              "stamina": 49,
+              "weapon_control": 39,
+              "breathing_control": 34,
+              "ultimate_control": 21
+            }
+          },
+          {
+            "id": "kinoe",
+            "name": "Kinoe",
+            "tier": 10,
+            "weight": 4,
+            "stats": {
+              "base_power": 235,
+              "strength": 47,
+              "speed": 47,
+              "defense": 47,
+              "stamina": 52,
+              "weapon_control": 42,
+              "breathing_control": 37,
+              "ultimate_control": 23
+            }
+          },
+          {
+            "id": "hashira",
+            "name": "Hashira",
+            "tier": 11,
+            "weight": 1,
+            "special_rank": true,
+            "stats": {
+              "base_power": 270,
+              "strength": 55,
+              "speed": 55,
+              "defense": 55,
+              "stamina": 60,
+              "weapon_control": 55,
+              "breathing_control": 55,
+              "ultimate_control": 40
+            }
+          }
+        ],
+
+        "weapons": [
+          {
+            "id": "standard_nichirin_katana",
+            "name": "Standard Nichirin Katana",
+            "weight": 30,
+            "stats": {
+              "attack": 65,
+              "speed": 70,
+              "range": 60,
+              "defense": 50,
+              "weapon_control": 60
+            },
+            "effects": []
+          },
+          {
+            "id": "black_nichirin_katana",
+            "name": "Black Nichirin Katana",
+            "weight": 10,
+            "stats": {
+              "attack": 70,
+              "speed": 72,
+              "range": 60,
+              "defense": 52,
+              "weapon_control": 65
+            },
+            "effects": [
+              "rare_nichirin_color"
+            ]
+          },
+          {
+            "id": "red_nichirin_katana",
+            "name": "Crimson Red Nichirin Katana",
+            "weight": 5,
+            "stats": {
+              "attack": 78,
+              "speed": 70,
+              "range": 60,
+              "defense": 50,
+              "weapon_control": 72
+            },
+            "effects": [
+              "demon_regeneration_suppression",
+              "wound_persistence"
+            ]
+          },
+          {
+            "id": "dual_serrated_katanas",
+            "name": "Dual Serrated Nichirin Katanas",
+            "weight": 5,
+            "stats": {
+              "attack": 82,
+              "speed": 78,
+              "range": 58,
+              "defense": 42,
+              "weapon_control": 82
+            },
+            "effects": [
+              "dual_wield",
+              "serrated_edge",
+              "high_combo_damage"
+            ]
+          },
+          {
+            "id": "stinger_katana",
+            "name": "Stinger Nichirin Katana",
+            "weight": 5,
+            "stats": {
+              "attack": 52,
+              "speed": 94,
+              "range": 55,
+              "defense": 40,
+              "weapon_control": 90
+            },
+            "effects": [
+              "piercing_attacks",
+              "poison_synergy"
+            ]
+          },
+          {
+            "id": "dual_cleavers_chain",
+            "name": "Dual Nichirin Cleavers with Chain",
+            "weight": 3,
+            "stats": {
+              "attack": 92,
+              "speed": 70,
+              "range": 82,
+              "defense": 62,
+              "weapon_control": 90
+            },
+            "effects": [
+              "chain_attacks",
+              "high_combo_damage",
+              "wide_area_attacks"
+            ]
+          },
+          {
+            "id": "whip_katana",
+            "name": "Whip-like Nichirin Katana",
+            "weight": 3,
+            "stats": {
+              "attack": 84,
+              "speed": 88,
+              "range": 96,
+              "defense": 35,
+              "weapon_control": 95
+            },
+            "effects": [
+              "extreme_range",
+              "flexible_attack_pattern"
+            ]
+          },
+          {
+            "id": "twisted_katana",
+            "name": "Twisted Nichirin Katana",
+            "weight": 4,
+            "stats": {
+              "attack": 78,
+              "speed": 74,
+              "range": 66,
+              "defense": 48,
+              "weapon_control": 84
+            },
+            "effects": [
+              "unpredictable_trajectory"
+            ]
+          },
+          {
+            "id": "nichirin_flail_axe",
+            "name": "Nichirin Flail and Axe",
+            "weight": 2,
+            "stats": {
+              "attack": 98,
+              "speed": 42,
+              "range": 88,
+              "defense": 76,
+              "weapon_control": 98
+            },
+            "effects": [
+              "extreme_impact",
+              "chain_control",
+              "wide_area_attacks"
+            ]
+          },
+          {
+            "id": "nichirin_wakizashi",
+            "name": "Nichirin Wakizashi",
+            "weight": 8,
+            "stats": {
+              "attack": 58,
+              "speed": 90,
+              "range": 38,
+              "defense": 45,
+              "weapon_control": 70
+            },
+            "effects": [
+              "close_quarters_combat"
+            ]
+          },
+          {
+            "id": "nichirin_shotgun",
+            "name": "Nichirin Shotgun",
+            "weight": 2,
+            "stats": {
+              "attack": 95,
+              "speed": 35,
+              "range": 92,
+              "defense": 25,
+              "weapon_control": 75
+            },
+            "effects": [
+              "ranged_attack",
+              "nichirin_ammunition"
+            ]
+          }
+        ],
+
+        "breathing_styles": [
+          {
+            "id": "water",
+            "name": "Water Breathing",
+            "weight": 25,
+            "stats": {
+              "attack": 72,
+              "speed": 76,
+              "defense": 88,
+              "stamina": 82,
+              "breathing_control": 78
+            },
+            "effects": [
+              "adaptive_combat",
+              "defensive_counter"
+            ]
+          },
+          {
+            "id": "flame",
+            "name": "Flame Breathing",
+            "weight": 15,
+            "stats": {
+              "attack": 92,
+              "speed": 72,
+              "defense": 68,
+              "stamina": 78,
+              "breathing_control": 75
+            },
+            "effects": [
+              "high_burst_damage",
+              "finishing_attack_bonus"
+            ]
+          },
+          {
+            "id": "thunder",
+            "name": "Thunder Breathing",
+            "weight": 15,
+            "stats": {
+              "attack": 82,
+              "speed": 100,
+              "defense": 55,
+              "stamina": 70,
+              "breathing_control": 80
+            },
+            "effects": [
+              "extreme_burst_speed",
+              "first_strike_bonus"
+            ]
+          },
+          {
+            "id": "wind",
+            "name": "Wind Breathing",
+            "weight": 12,
+            "stats": {
+              "attack": 90,
+              "speed": 80,
+              "defense": 62,
+              "stamina": 80,
+              "breathing_control": 76
+            },
+            "effects": [
+              "wide_area_slashes",
+              "pressure_attacks"
+            ]
+          },
+          {
+            "id": "stone",
+            "name": "Stone Breathing",
+            "weight": 7,
+            "stats": {
+              "attack": 98,
+              "speed": 55,
+              "defense": 95,
+              "stamina": 100,
+              "breathing_control": 82
+            },
+            "effects": [
+              "heavy_damage",
+              "high_defense",
+              "impact_resistance"
+            ]
+          },
+          {
+            "id": "mist",
+            "name": "Mist Breathing",
+            "weight": 10,
+            "stats": {
+              "attack": 75,
+              "speed": 88,
+              "defense": 65,
+              "stamina": 75,
+              "breathing_control": 85
+            },
+            "effects": [
+              "evasion",
+              "enemy_confusion"
+            ]
+          },
+          {
+            "id": "love",
+            "name": "Love Breathing",
+            "weight": 5,
+            "stats": {
+              "attack": 84,
+              "speed": 91,
+              "defense": 60,
+              "stamina": 86,
+              "breathing_control": 83
+            },
+            "effects": [
+              "flexible_attacks",
+              "combo_bonus"
+            ]
+          },
+          {
+            "id": "flower",
+            "name": "Flower Breathing",
+            "weight": 5,
+            "stats": {
+              "attack": 76,
+              "speed": 86,
+              "defense": 65,
+              "stamina": 75,
+              "breathing_control": 90
+            },
+            "effects": [
+              "precision",
+              "critical_hit_bonus"
+            ]
+          },
+          {
+            "id": "insect",
+            "name": "Insect Breathing",
+            "weight": 4,
+            "stats": {
+              "attack": 55,
+              "speed": 94,
+              "defense": 45,
+              "stamina": 72,
+              "breathing_control": 96
+            },
+            "effects": [
+              "poison_synergy",
+              "precision_thrusts",
+              "high_speed"
+            ]
+          },
+          {
+            "id": "serpent",
+            "name": "Serpent Breathing",
+            "weight": 5,
+            "stats": {
+              "attack": 80,
+              "speed": 84,
+              "defense": 64,
+              "stamina": 78,
+              "breathing_control": 88
+            },
+            "effects": [
+              "unpredictable_trajectory",
+              "precision_bonus"
+            ]
+          },
+          {
+            "id": "sound",
+            "name": "Sound Breathing",
+            "weight": 5,
+            "stats": {
+              "attack": 91,
+              "speed": 78,
+              "defense": 65,
+              "stamina": 92,
+              "breathing_control": 84
+            },
+            "effects": [
+              "explosive_attacks",
+              "sound_analysis"
+            ]
+          },
+          {
+            "id": "beast",
+            "name": "Beast Breathing",
+            "weight": 5,
+            "stats": {
+              "attack": 88,
+              "speed": 86,
+              "defense": 58,
+              "stamina": 95,
+              "breathing_control": 72
+            },
+            "effects": [
+              "enhanced_senses",
+              "unpredictable_attacks"
+            ]
+          },
+          {
+            "id": "sun",
+            "name": "Sun Breathing",
+            "weight": 2,
+            "rarity": "mythic",
+            "stats": {
+              "attack": 98,
+              "speed": 96,
+              "defense": 90,
+              "stamina": 95,
+              "breathing_control": 100
+            },
+            "effects": [
+              "extreme_damage",
+              "continuous_form_chain",
+              "demon_counter"
+            ]
+          }
+        ],
+
+        "ultimate": [
+          {
+            "id": "demon_slayer_mark",
+            "name": "Demon Slayer Mark",
+            "weight": 20,
+            "stats": {
+              "strength_bonus": 25,
+              "speed_bonus": 25,
+              "defense_bonus": 15,
+              "perception_bonus": 30,
+              "ultimate_control": 70
+            },
+            "effects": [
+              "stat_amplification",
+              "enhanced_perception"
+            ]
+          },
+          {
+            "id": "transparent_world",
+            "name": "Transparent World",
+            "weight": 8,
+            "rarity": "mythic",
+            "stats": {
+              "strength_bonus": 5,
+              "speed_bonus": 15,
+              "defense_bonus": 10,
+              "perception_bonus": 50,
+              "ultimate_control": 95
+            },
+            "effects": [
+              "enemy_prediction",
+              "weak_point_detection",
+              "critical_hit_chance"
+            ]
+          },
+          {
+            "id": "selfless_state",
+            "name": "Selfless State",
+            "weight": 5,
+            "rarity": "mythic",
+            "stats": {
+              "strength_bonus": 20,
+              "speed_bonus": 30,
+              "defense_bonus": 20,
+              "perception_bonus": 35,
+              "ultimate_control": 90
+            },
+            "effects": [
+              "presence_suppression",
+              "enhanced_counterattack"
+            ]
+          },
+          {
+            "id": "crimson_nichirin",
+            "name": "Crimson Red Nichirin Blade",
+            "weight": 15,
+            "stats": {
+              "strength_bonus": 15,
+              "speed_bonus": 10,
+              "defense_bonus": 5,
+              "perception_bonus": 10,
+              "ultimate_control": 75
+            },
+            "effects": [
+              "demon_regeneration_suppression",
+              "wound_persistence"
+            ]
+          },
+          {
+            "id": "total_concentration_constant",
+            "name": "Total Concentration Constant",
+            "weight": 30,
+            "stats": {
+              "strength_bonus": 10,
+              "speed_bonus": 10,
+              "defense_bonus": 10,
+              "perception_bonus": 15,
+              "ultimate_control": 60
+            },
+            "effects": [
+              "stamina_efficiency",
+              "constant_breathing"
+            ]
+          }
+        ]
+      },
+
+      "demon": {
+        "ranks": [
+          {
+            "id": "normal_demon",
+            "name": "Normal Demon",
+            "tier": 1,
+            "weight": 30,
+            "stats": {
+              "base_power": 100,
+              "strength": 30,
+              "speed": 28,
+              "defense": 30,
+              "stamina": 40,
+              "weapon_control": 20,
+              "technique_control": 25,
+              "ultimate_control": 10,
+              "regeneration": 35
+            }
+          },
+          {
+            "id": "lower_6",
+            "name": "Lower Rank Six",
+            "tier": 2,
+            "weight": 20,
+            "stats": {
+              "base_power": 160,
+              "strength": 42,
+              "speed": 40,
+              "defense": 42,
+              "stamina": 52,
+              "weapon_control": 30,
+              "technique_control": 40,
+              "ultimate_control": 20,
+              "regeneration": 50
+            }
+          },
+          {
+            "id": "lower_5",
+            "name": "Lower Rank Five",
+            "tier": 3,
+            "weight": 17,
+            "stats": {
+              "base_power": 180,
+              "strength": 46,
+              "speed": 44,
+              "defense": 46,
+              "stamina": 56,
+              "weapon_control": 33,
+              "technique_control": 45,
+              "ultimate_control": 23,
+              "regeneration": 55
+            }
+          },
+          {
+            "id": "lower_4",
+            "name": "Lower Rank Four",
+            "tier": 4,
+            "weight": 14,
+            "stats": {
+              "base_power": 200,
+              "strength": 50,
+              "speed": 48,
+              "defense": 50,
+              "stamina": 60,
+              "weapon_control": 36,
+              "technique_control": 50,
+              "ultimate_control": 26,
+              "regeneration": 60
+            }
+          },
+          {
+            "id": "lower_3",
+            "name": "Lower Rank Three",
+            "tier": 5,
+            "weight": 11,
+            "stats": {
+              "base_power": 225,
+              "strength": 55,
+              "speed": 53,
+              "defense": 55,
+              "stamina": 65,
+              "weapon_control": 40,
+              "technique_control": 55,
+              "ultimate_control": 30,
+              "regeneration": 65
+            }
+          },
+          {
+            "id": "lower_2",
+            "name": "Lower Rank Two",
+            "tier": 6,
+            "weight": 8,
+            "stats": {
+              "base_power": 250,
+              "strength": 60,
+              "speed": 58,
+              "defense": 60,
+              "stamina": 70,
+              "weapon_control": 44,
+              "technique_control": 60,
+              "ultimate_control": 34,
+              "regeneration": 70
+            }
+          },
+          {
+            "id": "lower_1",
+            "name": "Lower Rank One",
+            "tier": 7,
+            "weight": 6,
+            "stats": {
+              "base_power": 280,
+              "strength": 66,
+              "speed": 63,
+              "defense": 66,
+              "stamina": 76,
+              "weapon_control": 48,
+              "technique_control": 66,
+              "ultimate_control": 38,
+              "regeneration": 75
+            }
+          },
+          {
+            "id": "upper_6",
+            "name": "Upper Rank Six",
+            "tier": 8,
+            "weight": 4,
+            "stats": {
+              "base_power": 330,
+              "strength": 74,
+              "speed": 72,
+              "defense": 74,
+              "stamina": 84,
+              "weapon_control": 55,
+              "technique_control": 74,
+              "ultimate_control": 45,
+              "regeneration": 82
+            }
+          },
+          {
+            "id": "upper_5",
+            "name": "Upper Rank Five",
+            "tier": 9,
+            "weight": 3,
+            "stats": {
+              "base_power": 370,
+              "strength": 80,
+              "speed": 77,
+              "defense": 80,
+              "stamina": 88,
+              "weapon_control": 60,
+              "technique_control": 80,
+              "ultimate_control": 50,
+              "regeneration": 86
+            }
+          },
+          {
+            "id": "upper_4",
+            "name": "Upper Rank Four",
+            "tier": 10,
+            "weight": 2,
+            "stats": {
+              "base_power": 410,
+              "strength": 85,
+              "speed": 82,
+              "defense": 85,
+              "stamina": 92,
+              "weapon_control": 65,
+              "technique_control": 86,
+              "ultimate_control": 56,
+              "regeneration": 90
+            }
+          },
+          {
+            "id": "upper_3",
+            "name": "Upper Rank Three",
+            "tier": 11,
+            "weight": 1,
+            "stats": {
+              "base_power": 450,
+              "strength": 91,
+              "speed": 88,
+              "defense": 90,
+              "stamina": 96,
+              "weapon_control": 72,
+              "technique_control": 92,
+              "ultimate_control": 65,
+              "regeneration": 94
+            }
+          },
+          {
+            "id": "upper_2",
+            "name": "Upper Rank Two",
+            "tier": 12,
+            "weight": 1,
+            "stats": {
+              "base_power": 500,
+              "strength": 94,
+              "speed": 92,
+              "defense": 94,
+              "stamina": 98,
+              "weapon_control": 78,
+              "technique_control": 96,
+              "ultimate_control": 72,
+              "regeneration": 97
+            }
+          },
+          {
+            "id": "upper_1",
+            "name": "Upper Rank One",
+            "tier": 13,
+            "weight": 1,
+            "stats": {
+              "base_power": 560,
+              "strength": 98,
+              "speed": 96,
+              "defense": 98,
+              "stamina": 100,
+              "weapon_control": 90,
+              "technique_control": 100,
+              "ultimate_control": 85,
+              "regeneration": 99
+            }
+          },
+          {
+            "id": "demon_king",
+            "name": "Demon King",
+            "tier": 14,
+            "weight": 0.1,
+            "special_rank": true,
+            "stats": {
+              "base_power": 700,
+              "strength": 100,
+              "speed": 100,
+              "defense": 100,
+              "stamina": 100,
+              "weapon_control": 95,
+              "technique_control": 100,
+              "ultimate_control": 100,
+              "regeneration": 100
+            }
+          }
+        ],
+
+        "weapons": [
+          {
+            "id": "kokushibo_flesh_katana",
+            "name": "Kokushibo's Flesh Katana",
+            "weight": 2,
+            "stats": {
+              "attack": 100,
+              "speed": 92,
+              "range": 90,
+              "defense": 70,
+              "weapon_control": 100
+            },
+            "effects": [
+              "crescent_blade_generation",
+              "multiple_blades"
+            ]
+          },
+          {
+            "id": "doma_war_fans",
+            "name": "Doma's War Fans",
+            "weight": 3,
+            "stats": {
+              "attack": 90,
+              "speed": 85,
+              "range": 82,
+              "defense": 60,
+              "weapon_control": 88
+            },
+            "effects": [
+              "ice_synergy",
+              "projectile_attacks"
+            ]
+          },
+          {
+            "id": "gyutaro_blood_sickles",
+            "name": "Gyutaro's Blood Sickles",
+            "weight": 5,
+            "stats": {
+              "attack": 88,
+              "speed": 90,
+              "range": 65,
+              "defense": 50,
+              "weapon_control": 82
+            },
+            "effects": [
+              "blood_poison",
+              "ranged_slashes"
+            ]
+          },
+          {
+            "id": "daki_obi",
+            "name": "Daki's Obi Sashes",
+            "weight": 5,
+            "stats": {
+              "attack": 78,
+              "speed": 88,
+              "range": 98,
+              "defense": 60,
+              "weapon_control": 90
+            },
+            "effects": [
+              "long_range_attack",
+              "binding"
+            ]
+          },
+          {
+            "id": "hantengu_spear",
+            "name": "Hantengu's Spear",
+            "weight": 4,
+            "stats": {
+              "attack": 82,
+              "speed": 75,
+              "range": 85,
+              "defense": 60,
+              "weapon_control": 78
+            },
+            "effects": [
+              "lightning_synergy"
+            ]
+          },
+          {
+            "id": "gyokko_pots",
+            "name": "Gyokko's Pots",
+            "weight": 4,
+            "stats": {
+              "attack": 70,
+              "speed": 65,
+              "range": 90,
+              "defense": 70,
+              "weapon_control": 80
+            },
+            "effects": [
+              "teleportation",
+              "fish_summoning"
+            ]
+          },
+          {
+            "id": "kyogai_drums",
+            "name": "Kyogai's Drums",
+            "weight": 5,
+            "stats": {
+              "attack": 80,
+              "speed": 70,
+              "range": 90,
+              "defense": 55,
+              "weapon_control": 82
+            },
+            "effects": [
+              "room_rotation",
+              "spatial_manipulation"
+            ]
+          },
+          {
+            "id": "susamaru_temari",
+            "name": "Susamaru's Temari",
+            "weight": 5,
+            "stats": {
+              "attack": 86,
+              "speed": 82,
+              "range": 85,
+              "defense": 45,
+              "weapon_control": 78
+            },
+            "effects": [
+              "extreme_projectile_force",
+              "ricochet"
+            ]
+          }
+        ],
+
+        "blood_demon_arts": [
+          {
+            "id": "muzan_biological_manipulation",
+            "name": "Biological Manipulation",
+            "weight": 0.1,
+            "stats": {
+              "attack": 100,
+              "speed": 100,
+              "defense": 100,
+              "range": 95,
+              "control": 100
+            },
+            "effects": [
+              "body_manipulation",
+              "flesh_whips",
+              "multiple_attacks",
+              "extreme_regeneration"
+            ]
+          },
+          {
+            "id": "kokushibo_crescent_moon",
+            "name": "Crescent Moon Blades",
+            "weight": 1,
+            "stats": {
+              "attack": 100,
+              "speed": 98,
+              "defense": 80,
+              "range": 98,
+              "control": 100
+            },
+            "effects": [
+              "crescent_blades",
+              "multiple_projectiles",
+              "randomized_trajectory"
+            ]
+          },
+          {
+            "id": "doma_cryokinesis",
+            "name": "Cryokinesis",
+            "weight": 1,
+            "stats": {
+              "attack": 96,
+              "speed": 85,
+              "defense": 88,
+              "range": 100,
+              "control": 98
+            },
+            "effects": [
+              "ice_generation",
+              "cold_damage",
+              "area_control",
+              "clone_creation"
+            ]
+          },
+          {
+            "id": "akaza_destructive_death",
+            "name": "Destructive Death",
+            "weight": 1,
+            "stats": {
+              "attack": 100,
+              "speed": 98,
+              "defense": 90,
+              "range": 75,
+              "control": 100
+            },
+            "effects": [
+              "shockwave_attacks",
+              "close_combat_mastery",
+              "compass_needle"
+            ]
+          },
+          {
+            "id": "nakime_infinity_castle",
+            "name": "Infinity Castle Manipulation",
+            "weight": 2,
+            "stats": {
+              "attack": 55,
+              "speed": 65,
+              "defense": 75,
+              "range": 100,
+              "control": 100
+            },
+            "effects": [
+              "spatial_manipulation",
+              "teleportation",
+              "environment_control"
+            ]
+          },
+          {
+            "id": "hantengu_emotion_manifestation",
+            "name": "Emotion Manifestation",
+            "weight": 2,
+            "stats": {
+              "attack": 92,
+              "speed": 88,
+              "defense": 92,
+              "range": 90,
+              "control": 95
+            },
+            "effects": [
+              "emotion_clones",
+              "multiple_combatants",
+              "zohakuten_manifestation"
+            ]
+          },
+          {
+            "id": "gyokko_vase_manipulation",
+            "name": "Vase Manipulation",
+            "weight": 2,
+            "stats": {
+              "attack": 85,
+              "speed": 75,
+              "defense": 85,
+              "range": 92,
+              "control": 94
+            },
+            "effects": [
+              "vase_creation",
+              "teleportation",
+              "fish_summoning",
+              "water_prison"
+            ]
+          },
+          {
+            "id": "gyutaro_blood_sickles",
+            "name": "Blood Sickles",
+            "weight": 5,
+            "stats": {
+              "attack": 90,
+              "speed": 88,
+              "defense": 65,
+              "range": 78,
+              "control": 90
+            },
+            "effects": [
+              "poison_blood",
+              "ranged_slashes"
+            ]
+          },
+          {
+            "id": "daki_obi_manipulation",
+            "name": "Obi Sash Manipulation",
+            "weight": 5,
+            "stats": {
+              "attack": 82,
+              "speed": 88,
+              "defense": 65,
+              "range": 100,
+              "control": 90
+            },
+            "effects": [
+              "binding",
+              "long_range_slashes"
+            ]
+          },
+          {
+            "id": "kaigaku_lightning",
+            "name": "Lightning Blood Demon Art",
+            "weight": 3,
+            "stats": {
+              "attack": 92,
+              "speed": 98,
+              "defense": 60,
+              "range": 92,
+              "control": 90
+            },
+            "effects": [
+              "lightning_attacks",
+              "burn_damage"
+            ]
+          },
+          {
+            "id": "enmu_dream_manipulation",
+            "name": "Dream Manipulation",
+            "weight": 7,
+            "stats": {
+              "attack": 60,
+              "speed": 60,
+              "defense": 55,
+              "range": 95,
+              "control": 90
+            },
+            "effects": [
+              "sleep_inducement",
+              "dream_manipulation",
+              "mental_attack"
+            ]
+          },
+          {
+            "id": "rui_thread_manipulation",
+            "name": "Thread Manipulation",
+            "weight": 7,
+            "stats": {
+              "attack": 88,
+              "speed": 82,
+              "defense": 75,
+              "range": 90,
+              "control": 92
+            },
+            "effects": [
+              "thread_creation",
+              "thread_control",
+              "thread_barrier"
+            ]
+          },
+          {
+            "id": "kyogai_drum_manipulation",
+            "name": "Drum Manipulation",
+            "weight": 8,
+            "stats": {
+              "attack": 75,
+              "speed": 70,
+              "defense": 65,
+              "range": 92,
+              "control": 88
+            },
+            "effects": [
+              "room_rotation",
+              "spatial_attack"
+            ]
+          },
+          {
+            "id": "susamaru_temari_manipulation",
+            "name": "Temari Manipulation",
+            "weight": 8,
+            "stats": {
+              "attack": 86,
+              "speed": 82,
+              "defense": 50,
+              "range": 90,
+              "control": 85
+            },
+            "effects": [
+              "high_speed_projectiles",
+              "ricochet"
+            ]
+          },
+          {
+            "id": "yahaba_arrow_manipulation",
+            "name": "Arrow Manipulation",
+            "weight": 8,
+            "stats": {
+              "attack": 70,
+              "speed": 85,
+              "defense": 45,
+              "range": 100,
+              "control": 98
+            },
+            "effects": [
+              "direction_control",
+              "trajectory_manipulation"
+            ]
+          },
+          {
+            "id": "swamp_manipulation",
+            "name": "Swamp Manipulation",
+            "weight": 10,
+            "stats": {
+              "attack": 65,
+              "speed": 65,
+              "defense": 60,
+              "range": 85,
+              "control": 80
+            },
+            "effects": [
+              "swamp_creation",
+              "underground_movement",
+              "ambush"
+            ]
+          },
+          {
+            "id": "nezuko_exploding_blood",
+            "name": "Exploding Blood",
+            "weight": 3,
+            "stats": {
+              "attack": 95,
+              "speed": 80,
+              "defense": 70,
+              "range": 85,
+              "control": 85
+            },
+            "effects": [
+              "blood_explosion",
+              "demon_art_burning"
+            ]
+          }
+        ],
+
+        "regeneration": [
+          {
+            "id": "faint_regeneration",
+            "name": "Faint Regeneration",
+            "level": 1,
+            "weight": 25,
+            "stats": {
+              "regeneration_rate": 15,
+              "regeneration_control": 20
+            }
+          },
+          {
+            "id": "basic_regeneration",
+            "name": "Basic Regeneration",
+            "level": 2,
+            "weight": 20,
+            "stats": {
+              "regeneration_rate": 25,
+              "regeneration_control": 30
+            }
+          },
+          {
+            "id": "rapid_regeneration",
+            "name": "Rapid Regeneration",
+            "level": 3,
+            "weight": 16,
+            "stats": {
+              "regeneration_rate": 40,
+              "regeneration_control": 45
+            }
+          },
+          {
+            "id": "advanced_regeneration",
+            "name": "Advanced Regeneration",
+            "level": 4,
+            "weight": 12,
+            "stats": {
+              "regeneration_rate": 50,
+              "regeneration_control": 55
+            }
+          },
+          {
+            "id": "superior_regeneration",
+            "name": "Superior Regeneration",
+            "level": 5,
+            "weight": 9,
+            "stats": {
+              "regeneration_rate": 60,
+              "regeneration_control": 65
+            }
+          },
+          {
+            "id": "demonic_regeneration",
+            "name": "Demonic Regeneration",
+            "level": 6,
+            "weight": 7,
+            "stats": {
+              "regeneration_rate": 70,
+              "regeneration_control": 72
+            }
+          },
+          {
+            "id": "high_speed_regeneration",
+            "name": "High-Speed Regeneration",
+            "level": 7,
+            "weight": 5,
+            "stats": {
+              "regeneration_rate": 80,
+              "regeneration_control": 80
+            }
+          },
+          {
+            "id": "upper_moon_regeneration",
+            "name": "Upper Moon Regeneration",
+            "level": 8,
+            "weight": 3,
+            "stats": {
+              "regeneration_rate": 90,
+              "regeneration_control": 90
+            }
+          },
+          {
+            "id": "transcendent_regeneration",
+            "name": "Transcendent Regeneration",
+            "level": 9,
+            "weight": 1,
+            "stats": {
+              "regeneration_rate": 96,
+              "regeneration_control": 96
+            }
+          },
+          {
+            "id": "muzan_class_regeneration",
+            "name": "Muzan-Class Regeneration",
+            "level": 10,
+            "weight": 0.1,
+            "stats": {
+              "regeneration_rate": 100,
+              "regeneration_control": 100
+            }
+          }
+        ]
+      }
+    },
+
+    "jujutsu_kaisen": {
+      "id": "jujutsu_kaisen",
+      "name": "Jujutsu Kaisen",
+      "version": 1,
+
+      "faction_spin": {
+        "type": "weighted_random",
+        "options": [
+          {
+            "id": "sorcerer",
+            "name": "Jujutsu Sorcerer",
+            "weight": 50
+          },
+          {
+            "id": "curse",
+            "name": "Cursed Spirit",
+            "weight": 50
+          }
+        ]
+      },
+
+      "sorcerer_sequence": [
+        "rank",
+        "cursed_tool",
+        "cursed_technique",
+        "ultimate"
+      ],
+
+      "curse_sequence": [
+        "rank",
+        "cursed_tool",
+        "cursed_technique",
+        "ultimate"
+      ],
+
+      "sorcerer": {
+        "ranks": [
+          {
+            "id": "grade_4",
+            "name": "Grade 4 Sorcerer",
+            "weight": 30,
+            "stats": {
+              "base_power": 100,
+              "cursed_energy": 20,
+              "strength": 20,
+              "speed": 20,
+              "defense": 20,
+              "stamina": 25,
+              "cursed_energy_control": 20,
+              "technique_control": 15,
+              "domain_control": 5,
+              "perception": 20
+            }
+          },
+          {
+            "id": "grade_3",
+            "name": "Grade 3 Sorcerer",
+            "weight": 25,
+            "stats": {
+              "base_power": 125,
+              "cursed_energy": 28,
+              "strength": 26,
+              "speed": 27,
+              "defense": 27,
+              "stamina": 32,
+              "cursed_energy_control": 28,
+              "technique_control": 23,
+              "domain_control": 8,
+              "perception": 27
+            }
+          },
+          {
+            "id": "grade_2",
+            "name": "Grade 2 Sorcerer",
+            "weight": 20,
+            "stats": {
+              "base_power": 155,
+              "cursed_energy": 38,
+              "strength": 34,
+              "speed": 35,
+              "defense": 35,
+              "stamina": 42,
+              "cursed_energy_control": 38,
+              "technique_control": 34,
+              "domain_control": 12,
+              "perception": 35
+            }
+          },
+          {
+            "id": "semi_grade_1",
+            "name": "Semi-Grade 1 Sorcerer",
+            "weight": 12,
+            "stats": {
+              "base_power": 185,
+              "cursed_energy": 48,
+              "strength": 42,
+              "speed": 43,
+              "defense": 43,
+              "stamina": 50,
+              "cursed_energy_control": 48,
+              "technique_control": 43,
+              "domain_control": 18,
+              "perception": 43
+            }
+          },
+          {
+            "id": "grade_1",
+            "name": "Grade 1 Sorcerer",
+            "weight": 8,
+            "stats": {
+              "base_power": 225,
+              "cursed_energy": 60,
+              "strength": 55,
+              "speed": 55,
+              "defense": 55,
+              "stamina": 62,
+              "cursed_energy_control": 62,
+              "technique_control": 58,
+              "domain_control": 28,
+              "perception": 58
+            }
+          },
+          {
+            "id": "special_grade",
+            "name": "Special Grade Sorcerer",
+            "weight": 1,
+            "stats": {
+              "base_power": 350,
+              "cursed_energy": 95,
+              "strength": 85,
+              "speed": 85,
+              "defense": 85,
+              "stamina": 90,
+              "cursed_energy_control": 95,
+              "technique_control": 95,
+              "domain_control": 85,
+              "perception": 90
+            }
+          }
+        ],
+
+        "cursed_tools": [
+          {
+            "id": "slaughter_demon",
+            "name": "Slaughter Demon",
+            "weight": 10,
+            "stats": {
+              "attack": 68,
+              "speed": 72,
+              "range": 42,
+              "defense": 35,
+              "tool_control": 55
+            },
+            "effects": [
+              "cursed_spirit_damage"
+            ]
+          },
+          {
+            "id": "playful_cloud",
+            "name": "Playful Cloud",
+            "weight": 4,
+            "stats": {
+              "attack": 98,
+              "speed": 70,
+              "range": 55,
+              "defense": 65,
+              "tool_control": 92
+            },
+            "effects": [
+              "pure_physical_power",
+              "strength_scaling"
+            ]
+          },
+          {
+            "id": "inverted_spear_of_heaven",
+            "name": "Inverted Spear of Heaven",
+            "weight": 3,
+            "stats": {
+              "attack": 90,
+              "speed": 88,
+              "range": 45,
+              "defense": 45,
+              "tool_control": 92
+            },
+            "effects": [
+              "technique_nullification"
+            ]
+          },
+          {
+            "id": "chain_of_a_thousand_miles",
+            "name": "Chain of a Thousand Miles",
+            "weight": 3,
+            "stats": {
+              "attack": 65,
+              "speed": 80,
+              "range": 100,
+              "defense": 45,
+              "tool_control": 96
+            },
+            "effects": [
+              "infinite_extension",
+              "long_range_attack"
+            ]
+          },
+          {
+            "id": "split_soul_katana",
+            "name": "Split Soul Katana",
+            "weight": 3,
+            "stats": {
+              "attack": 100,
+              "speed": 86,
+              "range": 55,
+              "defense": 45,
+              "tool_control": 95
+            },
+            "effects": [
+              "soul_cutting",
+              "physical_resistance_bypass"
+            ]
+          },
+          {
+            "id": "sword_of_extermination",
+            "name": "Sword of Extermination",
+            "weight": 2,
+            "stats": {
+              "attack": 95,
+              "speed": 75,
+              "range": 55,
+              "defense": 50,
+              "tool_control": 88
+            },
+            "effects": [
+              "positive_energy",
+              "anti_curse_damage"
+            ]
+          },
+          {
+            "id": "black_rope",
+            "name": "Black Rope",
+            "weight": 3,
+            "stats": {
+              "attack": 55,
+              "speed": 80,
+              "range": 90,
+              "defense": 45,
+              "tool_control": 94
+            },
+            "effects": [
+              "technique_disturbance"
+            ]
+          },
+          {
+            "id": "mei_mei_axe",
+            "name": "Mei Mei's Battle Axe",
+            "weight": 8,
+            "stats": {
+              "attack": 90,
+              "speed": 55,
+              "range": 58,
+              "defense": 60,
+              "tool_control": 78
+            },
+            "effects": [
+              "heavy_strike"
+            ]
+          },
+          {
+            "id": "yuta_katana",
+            "name": "Yuta's Cursed Katana",
+            "weight": 8,
+            "stats": {
+              "attack": 75,
+              "speed": 78,
+              "range": 60,
+              "defense": 52,
+              "tool_control": 88
+            },
+            "effects": [
+              "cursed_energy_channeling"
+            ]
+          }
+        ],
+
+        "cursed_techniques": [
+          {
+            "id": "limitless",
+            "name": "Limitless",
+            "weight": 1,
+            "rarity": "mythic",
+            "stats": {
+              "attack": 98,
+              "speed": 95,
+              "defense": 100,
+              "range": 98,
+              "control": 100
+            },
+            "effects": [
+              "infinity",
+              "blue",
+              "red",
+              "hollow_purple_synergy"
+            ]
+          },
+          {
+            "id": "ten_shadows",
+            "name": "Ten Shadows Technique",
+            "weight": 2,
+            "rarity": "mythic",
+            "stats": {
+              "attack": 95,
+              "speed": 82,
+              "defense": 88,
+              "range": 95,
+              "control": 98
+            },
+            "effects": [
+              "shikigami_summoning",
+              "shadow_storage",
+              "mahoraga_potential"
+            ]
+          },
+          {
+            "id": "blood_manipulation",
+            "name": "Blood Manipulation",
+            "weight": 7,
+            "stats": {
+              "attack": 88,
+              "speed": 85,
+              "defense": 78,
+              "range": 90,
+              "control": 95
+            },
+            "effects": [
+              "blood_control",
+              "piercing_blood",
+              "supernova"
+            ]
+          },
+          {
+            "id": "cursed_speech",
+            "name": "Cursed Speech",
+            "weight": 6,
+            "stats": {
+              "attack": 90,
+              "speed": 80,
+              "defense": 45,
+              "range": 90,
+              "control": 92
+            },
+            "effects": [
+              "command_attack",
+              "forced_action"
+            ]
+          },
+          {
+            "id": "straw_doll",
+            "name": "Straw Doll Technique",
+            "weight": 7,
+            "stats": {
+              "attack": 82,
+              "speed": 65,
+              "defense": 50,
+              "range": 88,
+              "control": 94
+            },
+            "effects": [
+              "resonance",
+              "hairpin"
+            ]
+          },
+          {
+            "id": "ratio",
+            "name": "Ratio Technique",
+            "weight": 7,
+            "stats": {
+              "attack": 90,
+              "speed": 70,
+              "defense": 62,
+              "range": 55,
+              "control": 94
+            },
+            "effects": [
+              "weak_point",
+              "critical_damage"
+            ]
+          },
+          {
+            "id": "boogie_woogie",
+            "name": "Boogie Woogie",
+            "weight": 4,
+            "rarity": "legendary",
+            "stats": {
+              "attack": 75,
+              "speed": 96,
+              "defense": 70,
+              "range": 88,
+              "control": 98
+            },
+            "effects": [
+              "position_swap",
+              "battlefield_manipulation"
+            ]
+          },
+          {
+            "id": "cursed_spirit_manipulation",
+            "name": "Cursed Spirit Manipulation",
+            "weight": 1,
+            "rarity": "mythic",
+            "stats": {
+              "attack": 95,
+              "speed": 75,
+              "defense": 85,
+              "range": 100,
+              "control": 100
+            },
+            "effects": [
+              "curse_absorption",
+              "curse_summoning",
+              "maximum_uzumaki"
+            ]
+          },
+          {
+            "id": "construction",
+            "name": "Construction",
+            "weight": 5,
+            "stats": {
+              "attack": 80,
+              "speed": 60,
+              "defense": 65,
+              "range": 80,
+              "control": 92
+            },
+            "effects": [
+              "object_creation"
+            ]
+          },
+          {
+            "id": "black_bird_manipulation",
+            "name": "Black Bird Manipulation",
+            "weight": 6,
+            "stats": {
+              "attack": 82,
+              "speed": 85,
+              "defense": 50,
+              "range": 95,
+              "control": 96
+            },
+            "effects": [
+              "crow_control",
+              "remote_vision"
+            ]
+          },
+          {
+            "id": "puppet_manipulation",
+            "name": "Puppet Manipulation",
+            "weight": 6,
+            "stats": {
+              "attack": 82,
+              "speed": 65,
+              "defense": 70,
+              "range": 100,
+              "control": 96
+            },
+            "effects": [
+              "remote_puppet_control",
+              "large_range"
+            ]
+          },
+          {
+            "id": "star_rage",
+            "name": "Star Rage",
+            "weight": 1,
+            "rarity": "mythic",
+            "stats": {
+              "attack": 100,
+              "speed": 82,
+              "defense": 92,
+              "range": 65,
+              "control": 94
+            },
+            "effects": [
+              "virtual_mass",
+              "garuda"
+            ]
+          },
+          {
+            "id": "copy",
+            "name": "Copy",
+            "weight": 1,
+            "rarity": "mythic",
+            "stats": {
+              "attack": 95,
+              "speed": 88,
+              "defense": 90,
+              "range": 92,
+              "control": 100
+            },
+            "effects": [
+              "technique_copy",
+              "rika_storage",
+              "multiple_techniques"
+            ]
+          },
+          {
+            "id": "sky_manipulation",
+            "name": "Sky Manipulation",
+            "weight": 2,
+            "rarity": "legendary",
+            "stats": {
+              "attack": 85,
+              "speed": 90,
+              "defense": 92,
+              "range": 95,
+              "control": 98
+            },
+            "effects": [
+              "sky_distortion",
+              "space_surface_manipulation"
+            ]
+          },
+          {
+            "id": "projection_sorcery",
+            "name": "Projection Sorcery",
+            "weight": 3,
+            "rarity": "legendary",
+            "stats": {
+              "attack": 82,
+              "speed": 100,
+              "defense": 60,
+              "range": 70,
+              "control": 96
+            },
+            "effects": [
+              "frame_manipulation",
+              "extreme_speed"
+            ]
+          },
+          {
+            "id": "shrine",
+            "name": "Shrine",
+            "weight": 0.5,
+            "rarity": "mythic",
+            "stats": {
+              "attack": 100,
+              "speed": 98,
+              "defense": 88,
+              "range": 100,
+              "control": 100
+            },
+            "effects": [
+              "dismantle",
+              "cleave",
+              "fire",
+              "world_cutting_slash"
+            ]
+          },
+          {
+            "id": "mythical_beast_amber",
+            "name": "Mythical Beast Amber",
+            "weight": 1,
+            "rarity": "mythic",
+            "stats": {
+              "attack": 98,
+              "speed": 100,
+              "defense": 78,
+              "range": 95,
+              "control": 94
+            },
+            "effects": [
+              "electromagnetic_energy",
+              "lightning",
+              "body_transformation"
+            ]
+          },
+          {
+            "id": "comedian",
+            "name": "Comedian",
+            "weight": 0.5,
+            "rarity": "mythic",
+            "stats": {
+              "attack": 100,
+              "speed": 100,
+              "defense": 100,
+              "range": 100,
+              "control": 100
+            },
+            "effects": [
+              "reality_manipulation",
+              "comedy_condition"
+            ]
+          }
+        ],
+
+        "ultimate": [
+          {
+            "id": "six_eyes",
+            "name": "Six Eyes",
+            "weight": 0.5,
+            "rarity": "mythic",
+            "stats": {
+              "cursed_energy_efficiency": 100,
+              "perception": 100,
+              "technique_control": 100,
+              "domain_control": 95
+            },
+            "effects": [
+              "extreme_cursed_energy_efficiency",
+              "enhanced_perception",
+              "technique_analysis"
+            ]
+          },
+          {
+            "id": "reverse_cursed_technique",
+            "name": "Reverse Cursed Technique",
+            "weight": 8,
+            "rarity": "legendary",
+            "stats": {
+              "healing": 90,
+              "cursed_energy_control": 92,
+              "technique_control": 90
+            },
+            "effects": [
+              "self_healing",
+              "ally_healing",
+              "positive_energy"
+            ]
+          },
+          {
+            "id": "domain_expansion",
+            "name": "Domain Expansion",
+            "weight": 2,
+            "rarity": "mythic",
+            "stats": {
+              "attack": 100,
+              "defense": 90,
+              "range": 90,
+              "domain_control": 100
+            },
+            "effects": [
+              "guaranteed_hit",
+              "domain_barrier",
+              "technique_amplification"
+            ]
+          },
+          {
+            "id": "simple_domain",
+            "name": "Simple Domain",
+            "weight": 15,
+            "rarity": "rare",
+            "stats": {
+              "defense": 88,
+              "domain_control": 80
+            },
+            "effects": [
+              "anti_domain",
+              "guaranteed_hit_defense"
+            ]
+          },
+          {
+            "id": "black_flash_mastery",
+            "name": "Black Flash Potential",
+            "weight": 7,
+            "rarity": "legendary",
+            "stats": {
+              "attack": 95,
+              "speed": 80,
+              "technique_control": 90
+            },
+            "effects": [
+              "critical_cursed_energy_strike",
+              "cursed_energy_surge"
+            ]
+          },
+          {
+            "id": "heavenly_restriction",
+            "name": "Heavenly Restriction",
+            "weight": 1,
+            "rarity": "mythic",
+            "stats": {
+              "strength": 100,
+              "speed": 100,
+              "defense": 95,
+              "perception": 100,
+              "cursed_energy": 0
+            },
+            "effects": [
+              "extreme_physical_power",
+              "enhanced_senses",
+              "cursed_energy_tradeoff"
+            ]
+          }
+        ]
+      },
+
+      "curse": {
+        "ranks": [
+          {
+            "id": "grade_4_curse",
+            "name": "Grade 4 Curse",
+            "weight": 28,
+            "stats": {
+              "base_power": 90,
+              "cursed_energy": 18,
+              "strength": 22,
+              "speed": 18,
+              "defense": 22,
+              "stamina": 30,
+              "technique_control": 12,
+              "domain_control": 0,
+              "regeneration": 20
+            }
+          },
+          {
+            "id": "grade_3_curse",
+            "name": "Grade 3 Curse",
+            "weight": 24,
+            "stats": {
+              "base_power": 115,
+              "cursed_energy": 26,
+              "strength": 28,
+              "speed": 25,
+              "defense": 28,
+              "stamina": 38,
+              "technique_control": 20,
+              "domain_control": 0,
+              "regeneration": 28
+            }
+          },
+          {
+            "id": "grade_2_curse",
+            "name": "Grade 2 Curse",
+            "weight": 20,
+            "stats": {
+              "base_power": 150,
+              "cursed_energy": 38,
+              "strength": 38,
+              "speed": 35,
+              "defense": 38,
+              "stamina": 48,
+              "technique_control": 32,
+              "domain_control": 5,
+              "regeneration": 40
+            }
+          },
+          {
+            "id": "semi_grade_1_curse",
+            "name": "Semi-Grade 1 Curse",
+            "weight": 13,
+            "stats": {
+              "base_power": 185,
+              "cursed_energy": 48,
+              "strength": 47,
+              "speed": 44,
+              "defense": 47,
+              "stamina": 58,
+              "technique_control": 42,
+              "domain_control": 10,
+              "regeneration": 50
+            }
+          },
+          {
+            "id": "grade_1_curse",
+            "name": "Grade 1 Curse",
+            "weight": 9,
+            "stats": {
+              "base_power": 230,
+              "cursed_energy": 62,
+              "strength": 58,
+              "speed": 55,
+              "defense": 58,
+              "stamina": 70,
+              "technique_control": 55,
+              "domain_control": 20,
+              "regeneration": 65
+            }
+          },
+          {
+            "id": "special_grade_curse",
+            "name": "Special Grade Curse",
+            "weight": 3,
+            "stats": {
+              "base_power": 350,
+              "cursed_energy": 95,
+              "strength": 90,
+              "speed": 88,
+              "defense": 92,
+              "stamina": 100,
+              "technique_control": 95,
+              "domain_control": 88,
+              "regeneration": 95
+            }
+          }
+        ],
+
+        "cursed_tools": [
+          {
+            "id": "playful_cloud",
+            "name": "Playful Cloud",
+            "weight": 4,
+            "stats": {
+              "attack": 98,
+              "speed": 70,
+              "range": 55,
+              "defense": 65,
+              "tool_control": 92
+            },
+            "effects": [
+              "pure_physical_power"
+            ]
+          },
+          {
+            "id": "inverted_spear_of_heaven",
+            "name": "Inverted Spear of Heaven",
+            "weight": 3,
+            "stats": {
+              "attack": 90,
+              "speed": 88,
+              "range": 45,
+              "defense": 45,
+              "tool_control": 92
+            },
+            "effects": [
+              "technique_nullification"
+            ]
+          },
+          {
+            "id": "split_soul_katana",
+            "name": "Split Soul Katana",
+            "weight": 3,
+            "stats": {
+              "attack": 100,
+              "speed": 86,
+              "range": 55,
+              "defense": 45,
+              "tool_control": 95
+            },
+            "effects": [
+              "soul_cutting"
+            ]
+          },
+          {
+            "id": "chain_of_a_thousand_miles",
+            "name": "Chain of a Thousand Miles",
+            "weight": 3,
+            "stats": {
+              "attack": 65,
+              "speed": 80,
+              "range": 100,
+              "defense": 45,
+              "tool_control": 96
+            },
+            "effects": [
+              "infinite_extension"
+            ]
+          },
+          {
+            "id": "black_rope",
+            "name": "Black Rope",
+            "weight": 3,
+            "stats": {
+              "attack": 55,
+              "speed": 80,
+              "range": 90,
+              "defense": 45,
+              "tool_control": 94
+            },
+            "effects": [
+              "technique_disturbance"
+            ]
+          },
+          {
+            "id": "slaughter_demon",
+            "name": "Slaughter Demon",
+            "weight": 10,
+            "stats": {
+              "attack": 68,
+              "speed": 72,
+              "range": 42,
+              "defense": 35,
+              "tool_control": 55
+            },
+            "effects": [
+              "close_combat"
+            ]
+          }
+        ],
+
+        "cursed_techniques": [
+          {
+            "id": "disaster_flames",
+            "name": "Disaster Flames",
+            "weight": 2,
+            "stats": {
+              "attack": 98,
+              "speed": 88,
+              "defense": 72,
+              "range": 98,
+              "control": 96
+            },
+            "effects": [
+              "fire_manipulation",
+              "volcanic_attacks",
+              "maximum_meteor"
+            ]
+          },
+          {
+            "id": "disaster_plants",
+            "name": "Disaster Plants",
+            "weight": 2,
+            "stats": {
+              "attack": 90,
+              "speed": 70,
+              "defense": 95,
+              "range": 92,
+              "control": 95
+            },
+            "effects": [
+              "wood_manipulation",
+              "plant_generation"
+            ]
+          },
+          {
+            "id": "disaster_tides",
+            "name": "Disaster Tides",
+            "weight": 2,
+            "stats": {
+              "attack": 94,
+              "speed": 78,
+              "defense": 90,
+              "range": 100,
+              "control": 98
+            },
+            "effects": [
+              "water_manipulation",
+              "marine_shikigami"
+            ]
+          },
+          {
+            "id": "idle_transfiguration",
+            "name": "Idle Transfiguration",
+            "weight": 1,
+            "rarity": "mythic",
+            "stats": {
+              "attack": 100,
+              "speed": 90,
+              "defense": 100,
+              "range": 90,
+              "control": 100
+            },
+            "effects": [
+              "soul_manipulation",
+              "body_transformation"
+            ]
+          },
+          {
+            "id": "rot_technique",
+            "name": "Rot Technique",
+            "weight": 4,
+            "stats": {
+              "attack": 88,
+              "speed": 72,
+              "defense": 62,
+              "range": 82,
+              "control": 90
+            },
+            "effects": [
+              "corrosive_blood",
+              "poison",
+              "decay"
+            ]
+          },
+          {
+            "id": "smallpox",
+            "name": "Smallpox Curse Technique",
+            "weight": 3,
+            "stats": {
+              "attack": 82,
+              "speed": 60,
+              "defense": 72,
+              "range": 88,
+              "control": 95
+            },
+            "effects": [
+              "disease",
+              "coffin_domain",
+              "guaranteed_hit"
+            ]
+          },
+          {
+            "id": "cockroach_manipulation",
+            "name": "Cockroach Manipulation",
+            "weight": 4,
+            "stats": {
+              "attack": 86,
+              "speed": 90,
+              "defense": 72,
+              "range": 94,
+              "control": 88
+            },
+            "effects": [
+              "cockroach_swarm",
+              "flesh_consumption"
+            ]
+          },
+          {
+            "id": "curse_energy_discharge",
+            "name": "Cursed Energy Discharge",
+            "weight": 8,
+            "stats": {
+              "attack": 88,
+              "speed": 60,
+              "defense": 75,
+              "range": 90,
+              "control": 72
+            },
+            "effects": [
+              "cursed_energy_blast",
+              "energy_explosion"
+            ]
+          }
+        ],
+
+        "ultimate": [
+          {
+            "id": "domain_expansion",
+            "name": "Domain Expansion",
+            "weight": 2,
+            "rarity": "mythic",
+            "stats": {
+              "attack": 100,
+              "defense": 90,
+              "range": 95,
+              "domain_control": 100
+            },
+            "effects": [
+              "guaranteed_hit",
+              "domain_barrier",
+              "technique_amplification"
+            ]
+          },
+          {
+            "id": "domain_amplification",
+            "name": "Domain Amplification",
+            "weight": 5,
+            "rarity": "legendary",
+            "stats": {
+              "attack": 80,
+              "defense": 92,
+              "technique_control": 90,
+              "domain_control": 85
+            },
+            "effects": [
+              "technique_neutralization",
+              "anti_innate_technique"
+            ]
+          },
+          {
+            "id": "maximum_technique",
+            "name": "Maximum Technique",
+            "weight": 4,
+            "rarity": "legendary",
+            "stats": {
+              "attack": 100,
+              "range": 95,
+              "technique_control": 95
+            },
+            "effects": [
+              "maximum_output",
+              "technique_overdrive"
+            ]
+          },
+          {
+            "id": "special_grade_energy",
+            "name": "Special Grade Cursed Energy",
+            "weight": 5,
+            "rarity": "legendary",
+            "stats": {
+              "cursed_energy": 100,
+              "attack": 88,
+              "defense": 85,
+              "stamina": 100
+            },
+            "effects": [
+              "massive_cursed_energy_pool",
+              "energy_amplification"
+            ]
+          },
+          {
+            "id": "advanced_regeneration",
+            "name": "Advanced Curse Regeneration",
+            "weight": 10,
+            "rarity": "rare",
+            "stats": {
+              "regeneration": 95,
+              "defense": 85,
+              "stamina": 95
+            },
+            "effects": [
+              "cursed_energy_regeneration",
+              "body_reconstruction"
+            ]
+          },
+          {
+            "id": "anti_domain_mastery",
+            "name": "Anti-Domain Mastery",
+            "weight": 3,
+            "rarity": "legendary",
+            "stats": {
+              "defense": 98,
+              "domain_control": 95,
+              "technique_control": 88
+            },
+            "effects": [
+              "domain_resistance",
+              "guaranteed_hit_reduction"
+            ]
+          }
+        ]
+      }
+    }
+  }
+          }
